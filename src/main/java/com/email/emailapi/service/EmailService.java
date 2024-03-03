@@ -18,7 +18,7 @@ public class EmailService {
 	public boolean sendEmail(String subject, String message, String to) {
 	       
 		    boolean flag = false;
-		    String from = "shankar.sharma89202@gmail.com";
+		    String from = "s@gmail.com";
        	   System.out.println( "Preparing to send message..." );    	
 		   Properties properties = System.getProperties();
 	       System.out.println( "properties: "+properties );
@@ -30,7 +30,7 @@ public class EmailService {
 	       properties.put("mail.smtp.auth", true);
 	      
 	       //Step2: to get session object
-	       final String username = "shankar.sharma89202";
+	       final String username = "s@gmail.com";
 	       final String password = "tohmcvzbjfeybmbu";
 	       System.out.println( "going to get session....." );
 	       Session session= Session.getInstance(properties, new Authenticator() {  
